@@ -4,6 +4,7 @@
 
 body {
   background-color: black;
+  font-family: "Comic Sans MS", cursive;
 }
 
 .main {
@@ -57,4 +58,18 @@ body {
   float: left;
   top:167px; 
   left:-212px; 
+}
+
+.legend{
+  display: none;
+  float:left;
+  padding:150px 300px 0 0;
+}
+.legend h1{
+  font-size:2.3em;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+.legend p{
+  line-height: 2em;
 }
