@@ -2,6 +2,7 @@ $(document).ready(function(){
 	var ryuReady = $($('.ryu-ready'));
 	var ryuStill = $($('.ryu-still'));
 	var ryuThrow = $($('.ryu-throwing'));
+	var ryuCool = $($('.ryu-cool'));
 	var hadouken = $($('.hadouken'));
 
 	$('.ryu').mouseenter(function(){
@@ -29,6 +30,18 @@ $(document).ready(function(){
 	.mouseup(function(){
 		ryuThrow.hide();
   		ryuReady.show();
+	});
+
+	$(document).keydown(function( event ) {
+	  if ( event.which == 88 ) {
+	   event.preventDefault();
+	   ryuStill.hide();
+	   ryuCool.show();
+	  }
+	})
+	.keyup(function(){
+		ryuCool.hide();
+  		ryuStill.show();
 	});
 });
 
