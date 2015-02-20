@@ -1,15 +1,17 @@
-/** {
-  outline: red 1px solid;
-}*/
-
 body {
   background-color: black;
+  background: url(../images/background.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: cover;
+  /*background-attachment: fixed;*/
   font-family: "Comic Sans MS", cursive;
 }
 
 .main {
-  background: white;
-  margin-top: 110px;
+  margin-top: 25%;
   padding-left: 100px;
   min-width: 1200px;
   height: 500px;
@@ -61,15 +63,19 @@ body {
 }
 
 .legend{
+  background:#fff;
   display: none;
   float:left;
-  padding:150px 300px 0 0;
+  padding:10px 40px 20px;
+  top:0;
+  position: absolute;
 }
 .legend h1{
-  font-size:2.3em;
+  font-size:2.1em;
   text-transform: uppercase;
   line-height: 2em;
+
 }
 .legend p{
-  line-height: 2em;
+  line-height: 1.6em;
 }

@@ -5,7 +5,7 @@ $(document).ready(function(){
 	var ryuCool = $($('.ryu-cool'));
 	var hadouken = $($('.hadouken'));
 
-	$('.legend').fadeIn(5000);
+	$('.legend').delay(1000).fadeIn(4000);
 
 	$('.ryu').mouseenter(function(){
 		ryuStill.hide();
